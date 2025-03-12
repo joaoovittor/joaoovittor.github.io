@@ -1,0 +1,60 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 1500px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 40px;
+  gap: 100px;
+  position: relative;
+}
+.cont-back {
+  background-color: #000;
+}
+.text002 {
+  color: #b7b7b7;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.contato--:nth-child(-n + 2) a {
+  text-decoration: none;
+}
+
+.contato- li a {
+  color: #fff;
+}
+.contato- li {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.contato-- li {
+  list-style: none;
+}
+.rodape {
+  color: #a7a7a7a7;
+  margin-top: 50px;
+}
+@media (max-width: 1150px) {
+  .text002 {
+    font-size: 1.5rem;
+  }
+  .contato- li {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .contato {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    justify-items: left;
+    gap: 20px;
+  }
+  .text002 {
+    font-size: 1.2rem;
+  }
+  .contato- li {
+    font-size: 1.5rem;
+  }
+}

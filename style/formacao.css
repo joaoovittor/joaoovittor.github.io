@@ -1,0 +1,189 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  max-width: 1500px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 40px;
+  gap: 100px;
+  position: relative;
+}
+.formacao::before {
+  content: "";
+  background: url(/img/img/detalhe.svg) no-repeat center center;
+  height: 100px;
+  width: 150px;
+  left: 0;
+  bottom: -50px;
+
+  position: absolute;
+}
+.forma-back {
+  background-color: #0f0f0f;
+}
+.forma-title {
+  font-size: 10rem;
+  grid-row: 1 / 4;
+
+  line-height: 1;
+}
+.text001 {
+  color: #a7a7a7a7;
+  text-align: justify;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.text001 strong {
+  color: #ffff;
+}
+.formacao-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.formacao- {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+.formacao-tag {
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  color: #a7a7a7;
+}
+.formacao- p {
+  flex: 1;
+  color: #ffff;
+  font-size: 1.125rem;
+  margin-bottom: 60px;
+}
+.formacao-net {
+  color: #a7a7a7;
+  font-size: 0.875rem;
+}
+.formacao-::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  background: url(../img/img/detalhe.svg) no-repeat center center;
+  height: 25px;
+  width: 5px;
+  left: -5px;
+}
+
+.cursos- {
+  display: block;
+  color: #7b7b7b;
+  margin-bottom: 25px;
+  position: relative;
+}
+.cursos-::before {
+  content: "";
+  position: absolute;
+  background: url(../img/img/cursos.svg) no-repeat center center;
+  top: -5px;
+  height: 24px;
+  width: 24px;
+  left: -45px;
+}
+.cursos-- {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffff;
+}
+.cursos-- span {
+  color: #7b7b7b;
+}
+.idiomas {
+  grid-column: 2;
+}
+.idiomas- {
+  display: block;
+  color: #7b7b7b;
+  margin-bottom: 25px;
+  position: relative;
+}
+.idiomas-::before {
+  content: "";
+  position: absolute;
+  background: url(../img/img/idiomas.svg) no-repeat center center;
+  top: -5px;
+  height: 24px;
+  width: 24px;
+  left: -45px;
+}
+.idiomas-- {
+  margin-top: 20px;
+  color: #ffff;
+}
+.idiomas-- span {
+  color: #7b7b7b;
+}
+@media (max-width: 1000px) {
+  .text001 {
+    font-size: 1.5rem;
+  }
+  .forma-title {
+    font-size: 8rem;
+  }
+  .formacao {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 850px) {
+  .forma-title {
+    font-size: 6.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    justify-items: center;
+    gap: 20px;
+  }
+  .formacao::before {
+    height: 5px;
+    width: 40px;
+    bottom: -3.5px;
+    left: 1px;
+  }
+  .forma-title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+  }
+  .forma-title br {
+    display: none;
+  }
+  .text001 {
+    font-size: 1.2rem;
+  }
+  .idiomas {
+    grid-column: 1;
+  }
+  .cursos {
+    justify-items: left;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .cursos-::before {
+    top: -30px;
+    left: 0;
+  }
+  .idiomas {
+    justify-items: left;
+    width: 100%;
+  }
+  .idiomas-::before {
+    top: -30px;
+    left: 0;
+  }
+}
